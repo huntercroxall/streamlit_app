@@ -7,4 +7,4 @@ st.title("Hello World")
 penguins = sns.load_dataset('penguins')
 
 st.subheader('Raw Data')
-st.write(penguins)
+st.dataframe(penguins)
