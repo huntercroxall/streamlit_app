@@ -1,5 +1,5 @@
 import streamlit as st
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 def calculate_bmi(height, weight):
@@ -17,17 +17,18 @@ bmi = calculate_bmi(height, weight)
 
 st.write(f"**BMI:** {bmi:.2f}")
 
-fig, ax = plt.subplots()
-ax.scatter(height, weight, color='blue', s = 100, label='Individual')
+st.line_chart({"Height": [height], "Weight": [weight]})
+#fig, ax = plt.subplots()
+#ax.scatter(height, weight, color='blue', s = 100, label='Individual')
 
-ax.set_xlim(left=0, right=100)
-ax.set_ylim(bottom=0, top=300)
-ax.set_xlabel('Height in inches')
-ax.set_ylabel('Weight in pounds')
-ax.set_title('Height vs. Weight')
-ax.legend()
+#ax.set_xlim(left=0, right=100)
+#ax.set_ylim(bottom=0, top=300)
+#ax.set_xlabel('Height in inches')
+#ax.set_ylabel('Weight in pounds')
+#ax.set_title('Height vs. Weight')
+#ax.legend()
 
-st.pyplot(fig)
+#st.pyplot(fig)
 
 st.write("Did you find this app awesome?")
 
