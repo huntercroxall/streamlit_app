@@ -25,6 +25,7 @@ user_pounds = st.number_input("Weight in pounds", 0)
 user_kilo = user_pounds / 2.205
 st.write(f"Your weight in kilograms is {user_kilo}")
 
+st.subheader("BMI Calculator")
 height = st.slider("Select Height (centimeters)", 100, 200, 150)
 
 weight = st.slider("Select Weight (kilograms)", 36, 120, 70)
