@@ -15,6 +15,16 @@ def calculate_bmi(height, weight):
 
 st.title("Height and Weight Visualization")
 
+st.subheader("Metric Converters")
+
+user_inches = st.number_input("Height in inches", 0)
+user_centi = user_inches * 2.54
+st.write(f"Your height in centimeters is {user_centi}")
+
+user_pounds = st.number_input("Weight in pounds", 0)
+user_kilo = user_pounds / 2.205
+st.write(f"Your weight in kilograms is {user_kilo}")
+
 height = st.slider("Select Height (centimeters)", 100, 200, 150)
 
 weight = st.slider("Select Weight (kilograms)", 36, 120, 70)
