@@ -21,7 +21,7 @@ weight = st.slider("Select Weight (pounds)", 20, 300, 120)
 
 bmi = calculate_bmi(height, weight)
 
-st.write(f"**BMI:** {bmi:.2f}")
+st.subheader(f"**BMI:** {bmi:.2f}")
 
 #st.line_chart({"Height": [height], "Weight": [weight]})
 
