@@ -23,7 +23,7 @@ bmi = calculate_bmi(height, weight)
 
 st.write(f"**BMI:** {bmi:.2f}")
 
-st.line_chart({"Height": [height], "Weight": [weight]})
+#st.line_chart({"Height": [height], "Weight": [weight]})
 
 fig, ax = plt.subplots()
 ax.scatter(height, weight, color='blue', s = 100, label='Individual')
